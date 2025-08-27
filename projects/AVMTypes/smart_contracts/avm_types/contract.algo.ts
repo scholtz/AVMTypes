@@ -84,6 +84,7 @@ export class AvmTypes extends Contract {
   public arc4Byte(data: arc4.Byte): arc4.Byte {
     return data
   }
+
   public arc4DynamicArrayOfStruct(
     data: arc4.DynamicArray<structAddressUint256>,
   ): arc4.DynamicArray<structAddressUint256> {
@@ -122,6 +123,22 @@ export class AvmTypes extends Contract {
     return data
   }
   public arc4UintN8Alias(data: arc4.UintN8): arc4.UintN8 {
+    return data
+  }
+  public arc4UintN82Tuple(data: [arc4.UintN8, arc4.UintN8]): [arc4.UintN8, arc4.UintN8] {
+    return data
+  }
+  public arc4UintN83Tuple(data: [arc4.UintN8, arc4.UintN8, arc4.UintN8]): [arc4.UintN8, arc4.UintN8, arc4.UintN8] {
+    return data
+  }
+  public arc4ComplexTuple(
+    data: [
+      arc4.Address,
+      [arc4.UintN256, arc4.UintN256],
+      [arc4.UintN256, arc4.UintN256],
+      [arc4.UintN256, arc4.UintN256],
+    ],
+  ): [arc4.Address, [arc4.UintN256, arc4.UintN256], [arc4.UintN256, arc4.UintN256], [arc4.UintN256, arc4.UintN256]] {
     return data
   }
 }

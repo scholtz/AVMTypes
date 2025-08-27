@@ -8,19 +8,144 @@ main:
     // smart_contracts/avm_types/contract.algo.ts:14
     // export class AvmTypes extends Contract {
     txn NumAppArgs
-    bz main_bare_routing@37
-    pushbytess 0x53ff2c2e 0x9111c4bc 0xe5cd81c9 0xc8230fd7 0xe470e608 0x8551ef3a 0x03074b19 0x7240b366 0xa278f98f 0xb377be6d 0xa4af8ee4 0xe320bc5e 0xbd9122f9 0xb5ce8e03 0x16853974 0x42c5bb8f 0xaa5ac1c9 0x64e008f0 0xaabbec83 0x36f9eaad 0x36d24141 0xce66f2ea 0x4d486e99 0x699b2a18 0x258f73ac 0x50e2627e 0x9250b856 0x28ee24d0 0xc7c4e86a 0x1b67a42e 0x7b832998 0xe0da070e // method "stringReadonly(string)string", method "string(string)string", method "stringArray(string[])string[]", method "bytes(byte[])byte[]", method "boolean(bool)bool", method "biguint(uint512)uint512", method "struct((address,uint256))(address,uint256)", method "innerStruct((uint64,(address,uint256)))(uint64,(address,uint256))", method "PaymentTxn(pay)byte[]", method "ApplicationCallTxn(appl)byte[]", method "AssetTransferTxn(axfer)byte[]", method "KeyRegistrationTxn(keyreg)byte[]", method "Transaction(txn)byte[]", method "arc4StaticBytes8(byte[8])byte[8]", method "arc4StaticBytes32(byte[32])byte[32]", method "arc4StaticBytes1020(byte[1020])byte[1020]", method "arc4DynamicBytes(byte[])byte[]", method "arc4Address(address)address", method "arc4Bool(bool)bool", method "arc4Byte(byte)byte", method "arc4DynamicArrayOfStruct((address,uint256)[])(address,uint256)[]", method "arc4StaticArrayOf2Bytes(byte[2])byte[2]", method "arc4StaticArrayOf2Structs((address,uint256)[2])(address,uint256)[2]", method "arc4UFixed8x16(ufixed8x16)ufixed8x16", method "arc4UFixed512x160(ufixed512x160)ufixed512x160", method "arc4UintN8(uint8)uint8", method "arc4UintN512(uint512)uint512", method "arc4UintN128Alias(uint128)uint128", method "arc4UintN16Alias(uint16)uint16", method "arc4UintN256Alias(uint256)uint256", method "arc4UintN64Alias(uint64)uint64", method "arc4UintN8Alias(uint8)uint8"
+    bz main_bare_routing@40
+    pushbytess 0x53ff2c2e 0x9111c4bc 0xe5cd81c9 0xc8230fd7 0xe470e608 0x8551ef3a 0x03074b19 0x7240b366 0xa278f98f 0xb377be6d 0xa4af8ee4 0xe320bc5e 0xbd9122f9 0xb5ce8e03 0x16853974 0x42c5bb8f 0xaa5ac1c9 0x64e008f0 0xaabbec83 0x36f9eaad 0x36d24141 0xce66f2ea 0x4d486e99 0x699b2a18 0x258f73ac 0x50e2627e 0x9250b856 0x28ee24d0 0xc7c4e86a 0x1b67a42e 0x7b832998 0xe0da070e 0xdaf56cd3 0xb97093f3 0xb61603f2 // method "stringReadonly(string)string", method "string(string)string", method "stringArray(string[])string[]", method "bytes(byte[])byte[]", method "boolean(bool)bool", method "biguint(uint512)uint512", method "struct((address,uint256))(address,uint256)", method "innerStruct((uint64,(address,uint256)))(uint64,(address,uint256))", method "PaymentTxn(pay)byte[]", method "ApplicationCallTxn(appl)byte[]", method "AssetTransferTxn(axfer)byte[]", method "KeyRegistrationTxn(keyreg)byte[]", method "Transaction(txn)byte[]", method "arc4StaticBytes8(byte[8])byte[8]", method "arc4StaticBytes32(byte[32])byte[32]", method "arc4StaticBytes1020(byte[1020])byte[1020]", method "arc4DynamicBytes(byte[])byte[]", method "arc4Address(address)address", method "arc4Bool(bool)bool", method "arc4Byte(byte)byte", method "arc4DynamicArrayOfStruct((address,uint256)[])(address,uint256)[]", method "arc4StaticArrayOf2Bytes(byte[2])byte[2]", method "arc4StaticArrayOf2Structs((address,uint256)[2])(address,uint256)[2]", method "arc4UFixed8x16(ufixed8x16)ufixed8x16", method "arc4UFixed512x160(ufixed512x160)ufixed512x160", method "arc4UintN8(uint8)uint8", method "arc4UintN512(uint512)uint512", method "arc4UintN128Alias(uint128)uint128", method "arc4UintN16Alias(uint16)uint16", method "arc4UintN256Alias(uint256)uint256", method "arc4UintN64Alias(uint64)uint64", method "arc4UintN8Alias(uint8)uint8", method "arc4UintN82Tuple((uint8,uint8))(uint8,uint8)", method "arc4UintN83Tuple((uint8,uint8,uint8))(uint8,uint8,uint8)", method "arc4ComplexTuple((address,(uint256,uint256),(uint256,uint256),(uint256,uint256)))(address,(uint256,uint256),(uint256,uint256),(uint256,uint256))"
     txna ApplicationArgs 0
-    match main_stringReadonly_route@3 main_string_route@4 main_stringArray_route@5 main_bytes_route@6 main_boolean_route@7 main_biguint_route@8 main_struct_route@9 main_innerStruct_route@10 main_PaymentTxn_route@11 main_ApplicationCallTxn_route@12 main_AssetTransferTxn_route@13 main_KeyRegistrationTxn_route@14 main_Transaction_route@15 main_arc4StaticBytes8_route@16 main_arc4StaticBytes32_route@17 main_arc4StaticBytes1020_route@18 main_arc4DynamicBytes_route@19 main_arc4Address_route@20 main_arc4Bool_route@21 main_arc4Byte_route@22 main_arc4DynamicArrayOfStruct_route@23 main_arc4StaticArrayOf2Bytes_route@24 main_arc4StaticArrayOf2Structs_route@25 main_arc4UFixed8x16_route@26 main_arc4UFixed512x160_route@27 main_arc4UintN8_route@28 main_arc4UintN512_route@29 main_arc4UintN128Alias_route@30 main_arc4UintN16Alias_route@31 main_arc4UintN256Alias_route@32 main_arc4UintN64Alias_route@33 main_arc4UintN8Alias_route@34
+    match main_stringReadonly_route@3 main_string_route@4 main_stringArray_route@5 main_bytes_route@6 main_boolean_route@7 main_biguint_route@8 main_struct_route@9 main_innerStruct_route@10 main_PaymentTxn_route@11 main_ApplicationCallTxn_route@12 main_AssetTransferTxn_route@13 main_KeyRegistrationTxn_route@14 main_Transaction_route@15 main_arc4StaticBytes8_route@16 main_arc4StaticBytes32_route@17 main_arc4StaticBytes1020_route@18 main_arc4DynamicBytes_route@19 main_arc4Address_route@20 main_arc4Bool_route@21 main_arc4Byte_route@22 main_arc4DynamicArrayOfStruct_route@23 main_arc4StaticArrayOf2Bytes_route@24 main_arc4StaticArrayOf2Structs_route@25 main_arc4UFixed8x16_route@26 main_arc4UFixed512x160_route@27 main_arc4UintN8_route@28 main_arc4UintN512_route@29 main_arc4UintN128Alias_route@30 main_arc4UintN16Alias_route@31 main_arc4UintN256Alias_route@32 main_arc4UintN64Alias_route@33 main_arc4UintN8Alias_route@34 main_arc4UintN82Tuple_route@35 main_arc4UintN83Tuple_route@36 main_arc4ComplexTuple_route@37
 
-main_after_if_else@41:
+main_after_if_else@44:
     // smart_contracts/avm_types/contract.algo.ts:14
     // export class AvmTypes extends Contract {
     intc_1 // 0
     return
 
+main_arc4ComplexTuple_route@37:
+    // smart_contracts/avm_types/contract.algo.ts:134-141
+    // public arc4ComplexTuple(
+    //   data: [
+    //     arc4.Address,
+    //     [arc4.UintN256, arc4.UintN256],
+    //     [arc4.UintN256, arc4.UintN256],
+    //     [arc4.UintN256, arc4.UintN256],
+    //   ],
+    // ): [arc4.Address, [arc4.UintN256, arc4.UintN256], [arc4.UintN256, arc4.UintN256], [arc4.UintN256, arc4.UintN256]] {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/avm_types/contract.algo.ts:14
+    // export class AvmTypes extends Contract {
+    txna ApplicationArgs 1
+    dup
+    extract 0 32 // on error: Index access is out of bounds
+    dig 1
+    extract 32 64 // on error: Index access is out of bounds
+    dup
+    extract 0 32 // on error: Index access is out of bounds
+    swap
+    extract 32 32 // on error: Index access is out of bounds
+    dig 3
+    extract 96 64 // on error: Index access is out of bounds
+    dup
+    extract 0 32 // on error: Index access is out of bounds
+    swap
+    extract 32 32 // on error: Index access is out of bounds
+    uncover 5
+    extract 160 64 // on error: Index access is out of bounds
+    dup
+    extract 0 32 // on error: Index access is out of bounds
+    swap
+    extract 32 32 // on error: Index access is out of bounds
+    // smart_contracts/avm_types/contract.algo.ts:134-141
+    // public arc4ComplexTuple(
+    //   data: [
+    //     arc4.Address,
+    //     [arc4.UintN256, arc4.UintN256],
+    //     [arc4.UintN256, arc4.UintN256],
+    //     [arc4.UintN256, arc4.UintN256],
+    //   ],
+    // ): [arc4.Address, [arc4.UintN256, arc4.UintN256], [arc4.UintN256, arc4.UintN256], [arc4.UintN256, arc4.UintN256]] {
+    uncover 5
+    uncover 5
+    concat
+    uncover 4
+    uncover 4
+    concat
+    uncover 3
+    uncover 3
+    concat
+    uncover 3
+    uncover 3
+    concat
+    uncover 2
+    concat
+    swap
+    concat
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+main_arc4UintN83Tuple_route@36:
+    // smart_contracts/avm_types/contract.algo.ts:131
+    // public arc4UintN83Tuple(data: [arc4.UintN8, arc4.UintN8, arc4.UintN8]): [arc4.UintN8, arc4.UintN8, arc4.UintN8] {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/avm_types/contract.algo.ts:14
+    // export class AvmTypes extends Contract {
+    txna ApplicationArgs 1
+    dup
+    extract 0 1 // on error: Index access is out of bounds
+    dig 1
+    extract 1 1 // on error: Index access is out of bounds
+    uncover 2
+    extract 2 1 // on error: Index access is out of bounds
+    // smart_contracts/avm_types/contract.algo.ts:131
+    // public arc4UintN83Tuple(data: [arc4.UintN8, arc4.UintN8, arc4.UintN8]): [arc4.UintN8, arc4.UintN8, arc4.UintN8] {
+    cover 2
+    concat
+    swap
+    concat
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+main_arc4UintN82Tuple_route@35:
+    // smart_contracts/avm_types/contract.algo.ts:128
+    // public arc4UintN82Tuple(data: [arc4.UintN8, arc4.UintN8]): [arc4.UintN8, arc4.UintN8] {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/avm_types/contract.algo.ts:14
+    // export class AvmTypes extends Contract {
+    txna ApplicationArgs 1
+    dup
+    extract 0 1 // on error: Index access is out of bounds
+    swap
+    extract 1 1 // on error: Index access is out of bounds
+    // smart_contracts/avm_types/contract.algo.ts:128
+    // public arc4UintN82Tuple(data: [arc4.UintN8, arc4.UintN8]): [arc4.UintN8, arc4.UintN8] {
+    concat
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
 main_arc4UintN8Alias_route@34:
-    // smart_contracts/avm_types/contract.algo.ts:124
+    // smart_contracts/avm_types/contract.algo.ts:125
     // public arc4UintN8Alias(data: arc4.UintN8): arc4.UintN8 {
     txn OnCompletion
     !
@@ -31,7 +156,7 @@ main_arc4UintN8Alias_route@34:
     // smart_contracts/avm_types/contract.algo.ts:14
     // export class AvmTypes extends Contract {
     txna ApplicationArgs 1
-    // smart_contracts/avm_types/contract.algo.ts:124
+    // smart_contracts/avm_types/contract.algo.ts:125
     // public arc4UintN8Alias(data: arc4.UintN8): arc4.UintN8 {
     concat
     log
@@ -39,7 +164,7 @@ main_arc4UintN8Alias_route@34:
     return
 
 main_arc4UintN64Alias_route@33:
-    // smart_contracts/avm_types/contract.algo.ts:121
+    // smart_contracts/avm_types/contract.algo.ts:122
     // public arc4UintN64Alias(data: arc4.UintN64): arc4.UintN64 {
     txn OnCompletion
     !
@@ -50,7 +175,7 @@ main_arc4UintN64Alias_route@33:
     // smart_contracts/avm_types/contract.algo.ts:14
     // export class AvmTypes extends Contract {
     txna ApplicationArgs 1
-    // smart_contracts/avm_types/contract.algo.ts:121
+    // smart_contracts/avm_types/contract.algo.ts:122
     // public arc4UintN64Alias(data: arc4.UintN64): arc4.UintN64 {
     concat
     log
@@ -58,7 +183,7 @@ main_arc4UintN64Alias_route@33:
     return
 
 main_arc4UintN256Alias_route@32:
-    // smart_contracts/avm_types/contract.algo.ts:118
+    // smart_contracts/avm_types/contract.algo.ts:119
     // public arc4UintN256Alias(data: arc4.UintN256): arc4.UintN256 {
     txn OnCompletion
     !
@@ -69,7 +194,7 @@ main_arc4UintN256Alias_route@32:
     // smart_contracts/avm_types/contract.algo.ts:14
     // export class AvmTypes extends Contract {
     txna ApplicationArgs 1
-    // smart_contracts/avm_types/contract.algo.ts:118
+    // smart_contracts/avm_types/contract.algo.ts:119
     // public arc4UintN256Alias(data: arc4.UintN256): arc4.UintN256 {
     concat
     log
@@ -77,7 +202,7 @@ main_arc4UintN256Alias_route@32:
     return
 
 main_arc4UintN16Alias_route@31:
-    // smart_contracts/avm_types/contract.algo.ts:115
+    // smart_contracts/avm_types/contract.algo.ts:116
     // public arc4UintN16Alias(data: arc4.UintN16): arc4.UintN16 {
     txn OnCompletion
     !
@@ -88,7 +213,7 @@ main_arc4UintN16Alias_route@31:
     // smart_contracts/avm_types/contract.algo.ts:14
     // export class AvmTypes extends Contract {
     txna ApplicationArgs 1
-    // smart_contracts/avm_types/contract.algo.ts:115
+    // smart_contracts/avm_types/contract.algo.ts:116
     // public arc4UintN16Alias(data: arc4.UintN16): arc4.UintN16 {
     concat
     log
@@ -96,7 +221,7 @@ main_arc4UintN16Alias_route@31:
     return
 
 main_arc4UintN128Alias_route@30:
-    // smart_contracts/avm_types/contract.algo.ts:112
+    // smart_contracts/avm_types/contract.algo.ts:113
     // public arc4UintN128Alias(data: arc4.UintN128): arc4.UintN128 {
     txn OnCompletion
     !
@@ -107,7 +232,7 @@ main_arc4UintN128Alias_route@30:
     // smart_contracts/avm_types/contract.algo.ts:14
     // export class AvmTypes extends Contract {
     txna ApplicationArgs 1
-    // smart_contracts/avm_types/contract.algo.ts:112
+    // smart_contracts/avm_types/contract.algo.ts:113
     // public arc4UintN128Alias(data: arc4.UintN128): arc4.UintN128 {
     concat
     log
@@ -115,7 +240,7 @@ main_arc4UintN128Alias_route@30:
     return
 
 main_arc4UintN512_route@29:
-    // smart_contracts/avm_types/contract.algo.ts:109
+    // smart_contracts/avm_types/contract.algo.ts:110
     // public arc4UintN512(data: arc4.UintN<512>): arc4.UintN<512> {
     txn OnCompletion
     !
@@ -126,7 +251,7 @@ main_arc4UintN512_route@29:
     // smart_contracts/avm_types/contract.algo.ts:14
     // export class AvmTypes extends Contract {
     txna ApplicationArgs 1
-    // smart_contracts/avm_types/contract.algo.ts:109
+    // smart_contracts/avm_types/contract.algo.ts:110
     // public arc4UintN512(data: arc4.UintN<512>): arc4.UintN<512> {
     concat
     log
@@ -134,7 +259,7 @@ main_arc4UintN512_route@29:
     return
 
 main_arc4UintN8_route@28:
-    // smart_contracts/avm_types/contract.algo.ts:106
+    // smart_contracts/avm_types/contract.algo.ts:107
     // public arc4UintN8(data: arc4.UintN<8>): arc4.UintN<8> {
     txn OnCompletion
     !
@@ -145,7 +270,7 @@ main_arc4UintN8_route@28:
     // smart_contracts/avm_types/contract.algo.ts:14
     // export class AvmTypes extends Contract {
     txna ApplicationArgs 1
-    // smart_contracts/avm_types/contract.algo.ts:106
+    // smart_contracts/avm_types/contract.algo.ts:107
     // public arc4UintN8(data: arc4.UintN<8>): arc4.UintN<8> {
     concat
     log
@@ -153,7 +278,7 @@ main_arc4UintN8_route@28:
     return
 
 main_arc4UFixed512x160_route@27:
-    // smart_contracts/avm_types/contract.algo.ts:103
+    // smart_contracts/avm_types/contract.algo.ts:104
     // public arc4UFixed512x160(data: arc4.UFixedNxM<512, 160>): arc4.UFixedNxM<512, 160> {
     txn OnCompletion
     !
@@ -164,7 +289,7 @@ main_arc4UFixed512x160_route@27:
     // smart_contracts/avm_types/contract.algo.ts:14
     // export class AvmTypes extends Contract {
     txna ApplicationArgs 1
-    // smart_contracts/avm_types/contract.algo.ts:103
+    // smart_contracts/avm_types/contract.algo.ts:104
     // public arc4UFixed512x160(data: arc4.UFixedNxM<512, 160>): arc4.UFixedNxM<512, 160> {
     concat
     log
@@ -172,7 +297,7 @@ main_arc4UFixed512x160_route@27:
     return
 
 main_arc4UFixed8x16_route@26:
-    // smart_contracts/avm_types/contract.algo.ts:100
+    // smart_contracts/avm_types/contract.algo.ts:101
     // public arc4UFixed8x16(data: arc4.UFixedNxM<8, 16>): arc4.UFixedNxM<8, 16> {
     txn OnCompletion
     !
@@ -183,7 +308,7 @@ main_arc4UFixed8x16_route@26:
     // smart_contracts/avm_types/contract.algo.ts:14
     // export class AvmTypes extends Contract {
     txna ApplicationArgs 1
-    // smart_contracts/avm_types/contract.algo.ts:100
+    // smart_contracts/avm_types/contract.algo.ts:101
     // public arc4UFixed8x16(data: arc4.UFixedNxM<8, 16>): arc4.UFixedNxM<8, 16> {
     concat
     log
@@ -191,7 +316,7 @@ main_arc4UFixed8x16_route@26:
     return
 
 main_arc4StaticArrayOf2Structs_route@25:
-    // smart_contracts/avm_types/contract.algo.ts:95-97
+    // smart_contracts/avm_types/contract.algo.ts:96-98
     // public arc4StaticArrayOf2Structs(
     //   data: arc4.StaticArray<structAddressUint256, 2>,
     // ): arc4.StaticArray<structAddressUint256, 2> {
@@ -204,7 +329,7 @@ main_arc4StaticArrayOf2Structs_route@25:
     // smart_contracts/avm_types/contract.algo.ts:14
     // export class AvmTypes extends Contract {
     txna ApplicationArgs 1
-    // smart_contracts/avm_types/contract.algo.ts:95-97
+    // smart_contracts/avm_types/contract.algo.ts:96-98
     // public arc4StaticArrayOf2Structs(
     //   data: arc4.StaticArray<structAddressUint256, 2>,
     // ): arc4.StaticArray<structAddressUint256, 2> {
@@ -214,7 +339,7 @@ main_arc4StaticArrayOf2Structs_route@25:
     return
 
 main_arc4StaticArrayOf2Bytes_route@24:
-    // smart_contracts/avm_types/contract.algo.ts:92
+    // smart_contracts/avm_types/contract.algo.ts:93
     // public arc4StaticArrayOf2Bytes(data: arc4.StaticArray<arc4.Byte, 2>): arc4.StaticArray<arc4.Byte, 2> {
     txn OnCompletion
     !
@@ -225,7 +350,7 @@ main_arc4StaticArrayOf2Bytes_route@24:
     // smart_contracts/avm_types/contract.algo.ts:14
     // export class AvmTypes extends Contract {
     txna ApplicationArgs 1
-    // smart_contracts/avm_types/contract.algo.ts:92
+    // smart_contracts/avm_types/contract.algo.ts:93
     // public arc4StaticArrayOf2Bytes(data: arc4.StaticArray<arc4.Byte, 2>): arc4.StaticArray<arc4.Byte, 2> {
     concat
     log
@@ -233,7 +358,7 @@ main_arc4StaticArrayOf2Bytes_route@24:
     return
 
 main_arc4DynamicArrayOfStruct_route@23:
-    // smart_contracts/avm_types/contract.algo.ts:87-89
+    // smart_contracts/avm_types/contract.algo.ts:88-90
     // public arc4DynamicArrayOfStruct(
     //   data: arc4.DynamicArray<structAddressUint256>,
     // ): arc4.DynamicArray<structAddressUint256> {
@@ -246,7 +371,7 @@ main_arc4DynamicArrayOfStruct_route@23:
     // smart_contracts/avm_types/contract.algo.ts:14
     // export class AvmTypes extends Contract {
     txna ApplicationArgs 1
-    // smart_contracts/avm_types/contract.algo.ts:87-89
+    // smart_contracts/avm_types/contract.algo.ts:88-90
     // public arc4DynamicArrayOfStruct(
     //   data: arc4.DynamicArray<structAddressUint256>,
     // ): arc4.DynamicArray<structAddressUint256> {
@@ -745,11 +870,11 @@ main_stringReadonly_route@3:
     intc_0 // 1
     return
 
-main_bare_routing@37:
+main_bare_routing@40:
     // smart_contracts/avm_types/contract.algo.ts:14
     // export class AvmTypes extends Contract {
     txn OnCompletion
-    bnz main_after_if_else@41
+    bnz main_after_if_else@44
     txn ApplicationID
     !
     assert // can only call when creating
