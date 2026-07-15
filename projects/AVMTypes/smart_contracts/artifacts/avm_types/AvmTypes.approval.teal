@@ -3,24 +3,24 @@
 
 // @algorandfoundation/algorand-typescript/arc4/index.d.ts::Contract.approvalProgram() -> uint64:
 main:
-    intcblock 1 2 0 64
+    intcblock 1 2 0 8
     bytecblock 0x151f7c75 0x151f7c750020
-    // smart_contracts/avm_types/contract.algo.ts:14
+    // smart_contracts/avm_types/contract.algo.ts:27
     // export class AvmTypes extends Contract {
     txn NumAppArgs
-    bz main___algots__.defaultCreate@42
+    bz main___algots__.defaultCreate@55
     txn OnCompletion
     !
     assert // OnCompletion must be NoOp
     txn ApplicationID
     assert
-    pushbytess 0x53ff2c2e 0x9111c4bc 0xe5cd81c9 0xc8230fd7 0xe470e608 0x8551ef3a 0x03074b19 0x7240b366 0xa278f98f 0xb377be6d 0xa4af8ee4 0xe320bc5e 0xbd9122f9 0xb5ce8e03 0x16853974 0x42c5bb8f 0xaa5ac1c9 0x64e008f0 0xaabbec83 0x36f9eaad 0x36d24141 0xce66f2ea 0x4d486e99 0x699b2a18 0x258f73ac 0x50e2627e 0x9250b856 0x28ee24d0 0xc7c4e86a 0x1b67a42e 0x7b832998 0xe0da070e 0xdaf56cd3 0xb97093f3 0xb61603f2 // method "stringReadonly(string)string", method "string(string)string", method "stringArray(string[])string[]", method "bytes(byte[])byte[]", method "boolean(bool)bool", method "biguint(uint512)uint512", method "struct((address,uint256))(address,uint256)", method "innerStruct((uint64,(address,uint256)))(uint64,(address,uint256))", method "PaymentTxn(pay)byte[]", method "ApplicationCallTxn(appl)byte[]", method "AssetTransferTxn(axfer)byte[]", method "KeyRegistrationTxn(keyreg)byte[]", method "Transaction(txn)byte[]", method "arc4StaticBytes8(byte[8])byte[8]", method "arc4StaticBytes32(byte[32])byte[32]", method "arc4StaticBytes1020(byte[1020])byte[1020]", method "arc4DynamicBytes(byte[])byte[]", method "arc4Address(address)address", method "arc4Bool(bool)bool", method "arc4Byte(byte)byte", method "arc4DynamicArrayOfStruct((address,uint256)[])(address,uint256)[]", method "arc4StaticArrayOf2Bytes(byte[2])byte[2]", method "arc4StaticArrayOf2Structs((address,uint256)[2])(address,uint256)[2]", method "arc4UFixed8x16(ufixed8x16)ufixed8x16", method "arc4UFixed512x160(ufixed512x160)ufixed512x160", method "arc4UintN8(uint8)uint8", method "arc4UintN512(uint512)uint512", method "arc4UintN128Alias(uint128)uint128", method "arc4UintN16Alias(uint16)uint16", method "arc4UintN256Alias(uint256)uint256", method "arc4UintN64Alias(uint64)uint64", method "arc4UintN8Alias(uint8)uint8", method "arc4UintN82Tuple((uint8,uint8))(uint8,uint8)", method "arc4UintN83Tuple((uint8,uint8,uint8))(uint8,uint8,uint8)", method "arc4ComplexTuple((address,(uint256,uint256),(uint256,uint256),(uint256,uint256)))(address,(uint256,uint256),(uint256,uint256),(uint256,uint256))"
+    pushbytess 0x53ff2c2e 0x9111c4bc 0xe5cd81c9 0xc8230fd7 0xe470e608 0x8551ef3a 0x03074b19 0x7240b366 0xa278f98f 0xb377be6d 0xa4af8ee4 0xe320bc5e 0xbd9122f9 0x52baed92 0xacb6c69f 0x81bee622 0xd49d1c5d 0xd00c56af 0x0395d09e 0xb5ce8e03 0x16853974 0x42c5bb8f 0xaa5ac1c9 0x64e008f0 0xaabbec83 0x36f9eaad 0x36d24141 0xce66f2ea 0x4d486e99 0x699b2a18 0x258f73ac 0x50e2627e 0x9250b856 0x28ee24d0 0xc7c4e86a 0x1b67a42e 0x7b832998 0xe0da070e 0xdaf56cd3 0xb97093f3 0xb61603f2 0xa3fec25f 0x31aecef1 0x8a2c678d 0x82ebff92 0x905593c9 0x2957bec9 0x686a32a6 // method "stringReadonly(string)string", method "string(string)string", method "stringArray(string[])string[]", method "bytes(byte[])byte[]", method "boolean(bool)bool", method "biguint(uint512)uint512", method "struct((address,uint256))(address,uint256)", method "innerStruct((uint64,(address,uint256)))(uint64,(address,uint256))", method "PaymentTxn(pay)byte[]", method "ApplicationCallTxn(appl)byte[]", method "AssetTransferTxn(axfer)byte[]", method "KeyRegistrationTxn(keyreg)byte[]", method "Transaction(txn)byte[]", method "account(address)address", method "asset(uint64)uint64", method "application(uint64)uint64", method "accountIndexed(account)address", method "assetIndexed(asset)uint64", method "applicationIndexed(application)uint64", method "arc4StaticBytes8(byte[8])byte[8]", method "arc4StaticBytes32(byte[32])byte[32]", method "arc4StaticBytes1020(byte[1020])byte[1020]", method "arc4DynamicBytes(byte[])byte[]", method "arc4Address(address)address", method "arc4Bool(bool)bool", method "arc4Byte(byte)byte", method "arc4DynamicArrayOfStruct((address,uint256)[])(address,uint256)[]", method "arc4StaticArrayOf2Bytes(byte[2])byte[2]", method "arc4StaticArrayOf2Structs((address,uint256)[2])(address,uint256)[2]", method "arc4UFixed8x16(ufixed8x16)ufixed8x16", method "arc4UFixed512x160(ufixed512x160)ufixed512x160", method "arc4UintN8(uint8)uint8", method "arc4UintN512(uint512)uint512", method "arc4UintN128Alias(uint128)uint128", method "arc4UintN16Alias(uint16)uint16", method "arc4UintN256Alias(uint256)uint256", method "arc4UintN64Alias(uint64)uint64", method "arc4UintN8Alias(uint8)uint8", method "arc4UintN82Tuple((uint8,uint8))(uint8,uint8)", method "arc4UintN83Tuple((uint8,uint8,uint8))(uint8,uint8,uint8)", method "arc4ComplexTuple((address,(uint256,uint256),(uint256,uint256),(uint256,uint256)))(address,(uint256,uint256),(uint256,uint256),(uint256,uint256))", method "uint64(uint64)uint64", method "uint64Array(uint64[])uint64[]", method "booleanArray(bool[])bool[]", method "arc4Str(string)string", method "arc4Tuple((uint64,string))(uint64,string)", method "nativeTuple((uint64,string,bool))(uint64,string,bool)", method "fixedArrayUint64(uint64[3])uint64[3]"
     txna ApplicationArgs 0
-    match stringReadonly string stringArray bytes boolean biguint struct innerStruct PaymentTxn ApplicationCallTxn AssetTransferTxn KeyRegistrationTxn Transaction arc4StaticBytes8 arc4StaticBytes32 arc4StaticBytes1020 arc4DynamicBytes arc4Address arc4Bool arc4Byte arc4DynamicArrayOfStruct arc4StaticArrayOf2Bytes arc4StaticArrayOf2Structs arc4UFixed8x16 arc4UFixed512x160 arc4UintN8 arc4UintN512 arc4UintN128Alias arc4UintN16Alias arc4UintN256Alias arc4UintN64Alias arc4UintN8Alias arc4UintN82Tuple arc4UintN83Tuple arc4ComplexTuple
+    match stringReadonly string stringArray bytes boolean biguint struct innerStruct PaymentTxn ApplicationCallTxn AssetTransferTxn KeyRegistrationTxn Transaction account asset application accountIndexed assetIndexed applicationIndexed arc4StaticBytes8 arc4StaticBytes32 arc4StaticBytes1020 arc4DynamicBytes arc4Address arc4Bool arc4Byte arc4DynamicArrayOfStruct arc4StaticArrayOf2Bytes arc4StaticArrayOf2Structs arc4UFixed8x16 arc4UFixed512x160 arc4UintN8 arc4UintN512 arc4UintN128Alias arc4UintN16Alias arc4UintN256Alias arc4UintN64Alias arc4UintN8Alias arc4UintN82Tuple arc4UintN83Tuple arc4ComplexTuple uint64 uint64Array booleanArray arc4Str arc4Tuple nativeTuple fixedArrayUint64
     err
 
-main___algots__.defaultCreate@42:
-    // smart_contracts/avm_types/contract.algo.ts:14
+main___algots__.defaultCreate@55:
+    // smart_contracts/avm_types/contract.algo.ts:27
     // export class AvmTypes extends Contract {
     txn OnCompletion
     !
@@ -34,7 +34,7 @@ main___algots__.defaultCreate@42:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.stringReadonly[routing]() -> void:
 stringReadonly:
-    // smart_contracts/avm_types/contract.algo.ts:15
+    // smart_contracts/avm_types/contract.algo.ts:28
     // @abimethod({ readonly: true })
     txna ApplicationArgs 1
     dup
@@ -46,13 +46,13 @@ stringReadonly:
     len
     ==
     assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>
-    // smart_contracts/avm_types/contract.algo.ts:17
+    // smart_contracts/avm_types/contract.algo.ts:30
     // emit('stringReadonly', data)
     pushbytes 0x464bce780002
     dig 1
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:15
+    // smart_contracts/avm_types/contract.algo.ts:28
     // @abimethod({ readonly: true })
     bytec_0 // 0x151f7c75
     swap
@@ -64,7 +64,7 @@ stringReadonly:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.string[routing]() -> void:
 string:
-    // smart_contracts/avm_types/contract.algo.ts:20
+    // smart_contracts/avm_types/contract.algo.ts:33
     // public string(data: string): string {
     txna ApplicationArgs 1
     dup
@@ -76,13 +76,13 @@ string:
     len
     ==
     assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>
-    // smart_contracts/avm_types/contract.algo.ts:21
+    // smart_contracts/avm_types/contract.algo.ts:34
     // emit('string', data)
     pushbytes 0x44e790e30002
     dig 1
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:20
+    // smart_contracts/avm_types/contract.algo.ts:33
     // public string(data: string): string {
     bytec_0 // 0x151f7c75
     swap
@@ -94,7 +94,7 @@ string:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.stringArray[routing]() -> void:
 stringArray:
-    // smart_contracts/avm_types/contract.algo.ts:24
+    // smart_contracts/avm_types/contract.algo.ts:37
     // public stringArray(data: string[]): string[] {
     txna ApplicationArgs 1
     dupn 2
@@ -112,7 +112,7 @@ stringArray:
     intc_2 // 0
 
 stringArray_for_header@1:
-    // smart_contracts/avm_types/contract.algo.ts:24
+    // smart_contracts/avm_types/contract.algo.ts:37
     // public stringArray(data: string[]): string[] {
     dup
     dig 5
@@ -146,7 +146,7 @@ stringArray_for_header@1:
     b stringArray_for_header@1
 
 stringArray_after_for@4:
-    // smart_contracts/avm_types/contract.algo.ts:24
+    // smart_contracts/avm_types/contract.algo.ts:37
     // public stringArray(data: string[]): string[] {
     dig 3
     intc_1 // 2
@@ -154,7 +154,7 @@ stringArray_after_for@4:
     dig 3
     ==
     assert // invalid number of bytes for arc4.dynamic_array<string>
-    // smart_contracts/avm_types/contract.algo.ts:25
+    // smart_contracts/avm_types/contract.algo.ts:38
     // emit('stringArray', data)
     pushbytes 0x7d2a44bf0002
     dig 6
@@ -162,7 +162,7 @@ stringArray_after_for@4:
     cover 2
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:24
+    // smart_contracts/avm_types/contract.algo.ts:37
     // public stringArray(data: string[]): string[] {
     bytec_0 // 0x151f7c75
     swap
@@ -174,7 +174,7 @@ stringArray_after_for@4:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.bytes[routing]() -> void:
 bytes:
-    // smart_contracts/avm_types/contract.algo.ts:28
+    // smart_contracts/avm_types/contract.algo.ts:41
     // public bytes(data: bytes): bytes {
     txna ApplicationArgs 1
     dup
@@ -186,13 +186,13 @@ bytes:
     len
     ==
     assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>
-    // smart_contracts/avm_types/contract.algo.ts:29
+    // smart_contracts/avm_types/contract.algo.ts:42
     // emit('bytes', data)
     pushbytes 0xc33d4a1c0002
     dig 1
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:28
+    // smart_contracts/avm_types/contract.algo.ts:41
     // public bytes(data: bytes): bytes {
     bytec_0 // 0x151f7c75
     swap
@@ -204,7 +204,7 @@ bytes:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.boolean[routing]() -> void:
 boolean:
-    // smart_contracts/avm_types/contract.algo.ts:32
+    // smart_contracts/avm_types/contract.algo.ts:45
     // public boolean(data: boolean): boolean {
     txna ApplicationArgs 1
     dup
@@ -212,13 +212,13 @@ boolean:
     intc_0 // 1
     ==
     assert // invalid number of bytes for arc4.bool
-    // smart_contracts/avm_types/contract.algo.ts:33
+    // smart_contracts/avm_types/contract.algo.ts:46
     // emit('boolean', data)
     pushbytes 0x44bc395f // method "boolean(bool)"
     dig 1
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:32
+    // smart_contracts/avm_types/contract.algo.ts:45
     // public boolean(data: boolean): boolean {
     bytec_0 // 0x151f7c75
     swap
@@ -230,28 +230,28 @@ boolean:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.biguint[routing]() -> void:
 biguint:
-    // smart_contracts/avm_types/contract.algo.ts:36
+    // smart_contracts/avm_types/contract.algo.ts:49
     // public biguint(data: biguint): biguint {
     txna ApplicationArgs 1
     dup
     len
     dup
-    intc_3 // 64
+    pushint 64 // 64
     ==
     assert // invalid number of bytes for arc4.uint512
-    // smart_contracts/avm_types/contract.algo.ts:37
+    // smart_contracts/avm_types/contract.algo.ts:50
     // emit('biguint', data)
-    intc_3 // 64
+    pushint 64 // 64
     <=
     assert // overflow
-    intc_3 // 64
+    pushint 64 // 64
     bzero
     b|
     pushbytes 0x74a590c7 // method "biguint(uint512)"
     dig 1
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:36
+    // smart_contracts/avm_types/contract.algo.ts:49
     // public biguint(data: biguint): biguint {
     bytec_0 // 0x151f7c75
     swap
@@ -263,21 +263,21 @@ biguint:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.struct[routing]() -> void:
 struct:
-    // smart_contracts/avm_types/contract.algo.ts:40
+    // smart_contracts/avm_types/contract.algo.ts:53
     // public struct(data: structAddressUint256): structAddressUint256 {
     txna ApplicationArgs 1
     dup
     len
-    intc_3 // 64
+    pushint 64 // 64
     ==
     assert // invalid number of bytes for structAddressUint256
-    // smart_contracts/avm_types/contract.algo.ts:41
+    // smart_contracts/avm_types/contract.algo.ts:54
     // emit('struct', data)
     pushbytes 0x72b928fb // method "struct((address,uint256))"
     dig 1
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:40
+    // smart_contracts/avm_types/contract.algo.ts:53
     // public struct(data: structAddressUint256): structAddressUint256 {
     bytec_0 // 0x151f7c75
     swap
@@ -289,7 +289,7 @@ struct:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.innerStruct[routing]() -> void:
 innerStruct:
-    // smart_contracts/avm_types/contract.algo.ts:44
+    // smart_contracts/avm_types/contract.algo.ts:57
     // public innerStruct(data: innerStruct): innerStruct {
     txna ApplicationArgs 1
     dup
@@ -297,13 +297,13 @@ innerStruct:
     pushint 72 // 72
     ==
     assert // invalid number of bytes for innerStruct
-    // smart_contracts/avm_types/contract.algo.ts:45
+    // smart_contracts/avm_types/contract.algo.ts:58
     // emit('innerStruct', data)
     pushbytes 0x2493b418 // method "innerStruct((uint64,(address,uint256)))"
     dig 1
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:44
+    // smart_contracts/avm_types/contract.algo.ts:57
     // public innerStruct(data: innerStruct): innerStruct {
     bytec_0 // 0x151f7c75
     swap
@@ -315,7 +315,7 @@ innerStruct:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.PaymentTxn[routing]() -> void:
 PaymentTxn:
-    // smart_contracts/avm_types/contract.algo.ts:48
+    // smart_contracts/avm_types/contract.algo.ts:61
     // public PaymentTxn(data: gtxn.PaymentTxn): bytes {
     txn GroupIndex
     intc_0 // 1
@@ -325,14 +325,14 @@ PaymentTxn:
     intc_0 // pay
     ==
     assert // transaction type is pay
-    // smart_contracts/avm_types/contract.algo.ts:49
+    // smart_contracts/avm_types/contract.algo.ts:62
     // emit('PaymentTxn', data.txnId)
     gtxns TxID
     pushbytes 0xb9af13a6 // method "PaymentTxn(byte[32])"
     dig 1
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:48
+    // smart_contracts/avm_types/contract.algo.ts:61
     // public PaymentTxn(data: gtxn.PaymentTxn): bytes {
     bytec_1 // 0x151f7c750020
     swap
@@ -344,7 +344,7 @@ PaymentTxn:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.ApplicationCallTxn[routing]() -> void:
 ApplicationCallTxn:
-    // smart_contracts/avm_types/contract.algo.ts:52
+    // smart_contracts/avm_types/contract.algo.ts:65
     // public ApplicationCallTxn(data: gtxn.ApplicationCallTxn): bytes {
     txn GroupIndex
     intc_0 // 1
@@ -354,14 +354,14 @@ ApplicationCallTxn:
     pushint 6 // appl
     ==
     assert // transaction type is appl
-    // smart_contracts/avm_types/contract.algo.ts:53
+    // smart_contracts/avm_types/contract.algo.ts:66
     // emit('ApplicationCallTxn', data.txnId)
     gtxns TxID
     pushbytes 0xb9fc8683 // method "ApplicationCallTxn(byte[32])"
     dig 1
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:52
+    // smart_contracts/avm_types/contract.algo.ts:65
     // public ApplicationCallTxn(data: gtxn.ApplicationCallTxn): bytes {
     bytec_1 // 0x151f7c750020
     swap
@@ -373,7 +373,7 @@ ApplicationCallTxn:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.AssetTransferTxn[routing]() -> void:
 AssetTransferTxn:
-    // smart_contracts/avm_types/contract.algo.ts:56
+    // smart_contracts/avm_types/contract.algo.ts:69
     // public AssetTransferTxn(data: gtxn.AssetTransferTxn): bytes {
     txn GroupIndex
     intc_0 // 1
@@ -383,14 +383,14 @@ AssetTransferTxn:
     pushint 4 // axfer
     ==
     assert // transaction type is axfer
-    // smart_contracts/avm_types/contract.algo.ts:57
+    // smart_contracts/avm_types/contract.algo.ts:70
     // emit('AssetTransferTxn', data.txnId)
     gtxns TxID
     pushbytes 0x35d74f3b // method "AssetTransferTxn(byte[32])"
     dig 1
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:56
+    // smart_contracts/avm_types/contract.algo.ts:69
     // public AssetTransferTxn(data: gtxn.AssetTransferTxn): bytes {
     bytec_1 // 0x151f7c750020
     swap
@@ -402,7 +402,7 @@ AssetTransferTxn:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.KeyRegistrationTxn[routing]() -> void:
 KeyRegistrationTxn:
-    // smart_contracts/avm_types/contract.algo.ts:60
+    // smart_contracts/avm_types/contract.algo.ts:73
     // public KeyRegistrationTxn(data: gtxn.KeyRegistrationTxn): bytes {
     txn GroupIndex
     intc_0 // 1
@@ -412,14 +412,14 @@ KeyRegistrationTxn:
     intc_1 // keyreg
     ==
     assert // transaction type is keyreg
-    // smart_contracts/avm_types/contract.algo.ts:61
+    // smart_contracts/avm_types/contract.algo.ts:74
     // emit('KeyRegistrationTxn', data.txnId)
     gtxns TxID
     pushbytes 0xbf908f5a // method "KeyRegistrationTxn(byte[32])"
     dig 1
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:60
+    // smart_contracts/avm_types/contract.algo.ts:73
     // public KeyRegistrationTxn(data: gtxn.KeyRegistrationTxn): bytes {
     bytec_1 // 0x151f7c750020
     swap
@@ -431,19 +431,19 @@ KeyRegistrationTxn:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.Transaction[routing]() -> void:
 Transaction:
-    // smart_contracts/avm_types/contract.algo.ts:64
+    // smart_contracts/avm_types/contract.algo.ts:77
     // public Transaction(data: gtxn.Transaction): bytes {
     txn GroupIndex
     intc_0 // 1
     -
-    // smart_contracts/avm_types/contract.algo.ts:65
+    // smart_contracts/avm_types/contract.algo.ts:78
     // emit('Transaction', data.txnId)
     gtxns TxID
     pushbytes 0xf93e0699 // method "Transaction(byte[32])"
     dig 1
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:64
+    // smart_contracts/avm_types/contract.algo.ts:77
     // public Transaction(data: gtxn.Transaction): bytes {
     bytec_1 // 0x151f7c750020
     swap
@@ -453,23 +453,187 @@ Transaction:
     return
 
 
+// smart_contracts/avm_types/contract.algo.ts::AvmTypes.account[routing]() -> void:
+account:
+    // smart_contracts/avm_types/contract.algo.ts:81
+    // public account(data: Account): Account {
+    txna ApplicationArgs 1
+    dup
+    len
+    pushint 32 // 32
+    ==
+    assert // invalid number of bytes for arc4.static_array<arc4.uint8, 32>
+    // smart_contracts/avm_types/contract.algo.ts:82
+    // emit('account', data.bytes)
+    pushbytes 0xd9dcc0f1 // method "account(byte[32])"
+    dig 1
+    concat
+    log
+    // smart_contracts/avm_types/contract.algo.ts:81
+    // public account(data: Account): Account {
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+
+// smart_contracts/avm_types/contract.algo.ts::AvmTypes.asset[routing]() -> void:
+asset:
+    // smart_contracts/avm_types/contract.algo.ts:85
+    // public asset(data: Asset): Asset {
+    txna ApplicationArgs 1
+    dup
+    len
+    intc_3 // 8
+    ==
+    assert // invalid number of bytes for arc4.uint64
+    // smart_contracts/avm_types/contract.algo.ts:86
+    // emit('asset', data.id)
+    pushbytes 0x0a23bb50 // method "asset(uint64)"
+    dig 1
+    concat
+    log
+    // smart_contracts/avm_types/contract.algo.ts:85
+    // public asset(data: Asset): Asset {
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+
+// smart_contracts/avm_types/contract.algo.ts::AvmTypes.application[routing]() -> void:
+application:
+    // smart_contracts/avm_types/contract.algo.ts:89
+    // public application(data: Application): Application {
+    txna ApplicationArgs 1
+    dup
+    len
+    intc_3 // 8
+    ==
+    assert // invalid number of bytes for arc4.uint64
+    // smart_contracts/avm_types/contract.algo.ts:90
+    // emit('application', data.id)
+    pushbytes 0xca33c6e0 // method "application(uint64)"
+    dig 1
+    concat
+    log
+    // smart_contracts/avm_types/contract.algo.ts:89
+    // public application(data: Application): Application {
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+
+// smart_contracts/avm_types/contract.algo.ts::AvmTypes.accountIndexed[routing]() -> void:
+accountIndexed:
+    // smart_contracts/avm_types/contract.algo.ts:95
+    // @abimethod({ resourceEncoding: 'index' })
+    txna ApplicationArgs 1
+    dup
+    len
+    intc_0 // 1
+    ==
+    assert // invalid number of bytes for arc4.uint8
+    btoi
+    txnas Accounts
+    // smart_contracts/avm_types/contract.algo.ts:97
+    // emit('accountIndexed', data.bytes)
+    pushbytes 0xa11253d7 // method "accountIndexed(byte[32])"
+    dig 1
+    concat
+    log
+    // smart_contracts/avm_types/contract.algo.ts:95
+    // @abimethod({ resourceEncoding: 'index' })
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+
+// smart_contracts/avm_types/contract.algo.ts::AvmTypes.assetIndexed[routing]() -> void:
+assetIndexed:
+    // smart_contracts/avm_types/contract.algo.ts:100
+    // @abimethod({ resourceEncoding: 'index' })
+    txna ApplicationArgs 1
+    dup
+    len
+    intc_0 // 1
+    ==
+    assert // invalid number of bytes for arc4.uint8
+    btoi
+    txnas Assets
+    // smart_contracts/avm_types/contract.algo.ts:102
+    // emit('assetIndexed', data.id)
+    itob
+    pushbytes 0x720d1827 // method "assetIndexed(uint64)"
+    dig 1
+    concat
+    log
+    // smart_contracts/avm_types/contract.algo.ts:100
+    // @abimethod({ resourceEncoding: 'index' })
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+
+// smart_contracts/avm_types/contract.algo.ts::AvmTypes.applicationIndexed[routing]() -> void:
+applicationIndexed:
+    // smart_contracts/avm_types/contract.algo.ts:105
+    // @abimethod({ resourceEncoding: 'index' })
+    txna ApplicationArgs 1
+    dup
+    len
+    intc_0 // 1
+    ==
+    assert // invalid number of bytes for arc4.uint8
+    btoi
+    txnas Applications
+    // smart_contracts/avm_types/contract.algo.ts:107
+    // emit('applicationIndexed', data.id)
+    itob
+    pushbytes 0xbf94f6c6 // method "applicationIndexed(uint64)"
+    dig 1
+    concat
+    log
+    // smart_contracts/avm_types/contract.algo.ts:105
+    // @abimethod({ resourceEncoding: 'index' })
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.arc4StaticBytes8[routing]() -> void:
 arc4StaticBytes8:
-    // smart_contracts/avm_types/contract.algo.ts:79
+    // smart_contracts/avm_types/contract.algo.ts:114
     // public arc4StaticBytes8(data: arc4.StaticBytes<8>): arc4.StaticBytes<8> {
     txna ApplicationArgs 1
     dup
     len
-    pushint 8 // 8
+    intc_3 // 8
     ==
     assert // invalid number of bytes for arc4.static_array<arc4.uint8, 8>
-    // smart_contracts/avm_types/contract.algo.ts:80
+    // smart_contracts/avm_types/contract.algo.ts:115
     // emit('arc4StaticBytes8', data)
     pushbytes 0x523b63bb // method "arc4StaticBytes8(byte[8])"
     dig 1
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:79
+    // smart_contracts/avm_types/contract.algo.ts:114
     // public arc4StaticBytes8(data: arc4.StaticBytes<8>): arc4.StaticBytes<8> {
     bytec_0 // 0x151f7c75
     swap
@@ -481,7 +645,7 @@ arc4StaticBytes8:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.arc4StaticBytes32[routing]() -> void:
 arc4StaticBytes32:
-    // smart_contracts/avm_types/contract.algo.ts:83
+    // smart_contracts/avm_types/contract.algo.ts:118
     // public arc4StaticBytes32(data: arc4.StaticBytes<32>): arc4.StaticBytes<32> {
     txna ApplicationArgs 1
     dup
@@ -489,13 +653,13 @@ arc4StaticBytes32:
     pushint 32 // 32
     ==
     assert // invalid number of bytes for arc4.static_array<arc4.uint8, 32>
-    // smart_contracts/avm_types/contract.algo.ts:84
+    // smart_contracts/avm_types/contract.algo.ts:119
     // emit('arc4StaticBytes32', data)
     pushbytes 0x1d2a1fd6 // method "arc4StaticBytes32(byte[32])"
     dig 1
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:83
+    // smart_contracts/avm_types/contract.algo.ts:118
     // public arc4StaticBytes32(data: arc4.StaticBytes<32>): arc4.StaticBytes<32> {
     bytec_0 // 0x151f7c75
     swap
@@ -507,7 +671,7 @@ arc4StaticBytes32:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.arc4StaticBytes1020[routing]() -> void:
 arc4StaticBytes1020:
-    // smart_contracts/avm_types/contract.algo.ts:87
+    // smart_contracts/avm_types/contract.algo.ts:122
     // public arc4StaticBytes1020(data: arc4.StaticBytes<1020>): arc4.StaticBytes<1020> {
     txna ApplicationArgs 1
     dup
@@ -525,7 +689,7 @@ arc4StaticBytes1020:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.arc4DynamicBytes[routing]() -> void:
 arc4DynamicBytes:
-    // smart_contracts/avm_types/contract.algo.ts:91
+    // smart_contracts/avm_types/contract.algo.ts:126
     // public arc4DynamicBytes(data: arc4.DynamicBytes): arc4.DynamicBytes {
     txna ApplicationArgs 1
     dup
@@ -547,7 +711,7 @@ arc4DynamicBytes:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.arc4Address[routing]() -> void:
 arc4Address:
-    // smart_contracts/avm_types/contract.algo.ts:95
+    // smart_contracts/avm_types/contract.algo.ts:130
     // public arc4Address(data: arc4.Address): arc4.Address {
     txna ApplicationArgs 1
     dup
@@ -555,13 +719,13 @@ arc4Address:
     pushint 32 // 32
     ==
     assert // invalid number of bytes for arc4.static_array<arc4.uint8, 32>
-    // smart_contracts/avm_types/contract.algo.ts:96
+    // smart_contracts/avm_types/contract.algo.ts:131
     // emit('arc4Address', data)
     pushbytes 0xd8f8b58c // method "arc4Address(address)"
     dig 1
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:95
+    // smart_contracts/avm_types/contract.algo.ts:130
     // public arc4Address(data: arc4.Address): arc4.Address {
     bytec_0 // 0x151f7c75
     swap
@@ -573,7 +737,7 @@ arc4Address:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.arc4Bool[routing]() -> void:
 arc4Bool:
-    // smart_contracts/avm_types/contract.algo.ts:99
+    // smart_contracts/avm_types/contract.algo.ts:134
     // public arc4Bool(data: arc4.Bool): arc4.Bool {
     txna ApplicationArgs 1
     dup
@@ -581,13 +745,13 @@ arc4Bool:
     intc_0 // 1
     ==
     assert // invalid number of bytes for arc4.bool
-    // smart_contracts/avm_types/contract.algo.ts:100
+    // smart_contracts/avm_types/contract.algo.ts:135
     // emit('arc4Bool', data)
     pushbytes 0x7758321c // method "arc4Bool(bool)"
     dig 1
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:99
+    // smart_contracts/avm_types/contract.algo.ts:134
     // public arc4Bool(data: arc4.Bool): arc4.Bool {
     bytec_0 // 0x151f7c75
     swap
@@ -599,7 +763,7 @@ arc4Bool:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.arc4Byte[routing]() -> void:
 arc4Byte:
-    // smart_contracts/avm_types/contract.algo.ts:103
+    // smart_contracts/avm_types/contract.algo.ts:138
     // public arc4Byte(data: arc4.Byte): arc4.Byte {
     txna ApplicationArgs 1
     dup
@@ -607,13 +771,13 @@ arc4Byte:
     intc_0 // 1
     ==
     assert // invalid number of bytes for arc4.uint8
-    // smart_contracts/avm_types/contract.algo.ts:104
+    // smart_contracts/avm_types/contract.algo.ts:139
     // emit('arc4Byte', data)
     pushbytes 0xafbaace7 // method "arc4Byte(byte)"
     dig 1
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:103
+    // smart_contracts/avm_types/contract.algo.ts:138
     // public arc4Byte(data: arc4.Byte): arc4.Byte {
     bytec_0 // 0x151f7c75
     swap
@@ -625,7 +789,7 @@ arc4Byte:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.arc4DynamicArrayOfStruct[routing]() -> void:
 arc4DynamicArrayOfStruct:
-    // smart_contracts/avm_types/contract.algo.ts:108-110
+    // smart_contracts/avm_types/contract.algo.ts:143-145
     // public arc4DynamicArrayOfStruct(
     //   data: arc4.DynamicArray<structAddressUint256>,
     // ): arc4.DynamicArray<structAddressUint256> {
@@ -633,7 +797,7 @@ arc4DynamicArrayOfStruct:
     dup
     intc_2 // 0
     extract_uint16 // on error: invalid array length header
-    intc_3 // 64
+    pushint 64 // 64
     *
     intc_1 // 2
     +
@@ -641,13 +805,13 @@ arc4DynamicArrayOfStruct:
     len
     ==
     assert // invalid number of bytes for arc4.dynamic_array<structAddressUint256>
-    // smart_contracts/avm_types/contract.algo.ts:111
+    // smart_contracts/avm_types/contract.algo.ts:146
     // emit('arc4DynamicArrayOfStruct', data)
     pushbytes 0xf7b4da620002
     dig 1
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:108-110
+    // smart_contracts/avm_types/contract.algo.ts:143-145
     // public arc4DynamicArrayOfStruct(
     //   data: arc4.DynamicArray<structAddressUint256>,
     // ): arc4.DynamicArray<structAddressUint256> {
@@ -661,7 +825,7 @@ arc4DynamicArrayOfStruct:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.arc4StaticArrayOf2Bytes[routing]() -> void:
 arc4StaticArrayOf2Bytes:
-    // smart_contracts/avm_types/contract.algo.ts:114
+    // smart_contracts/avm_types/contract.algo.ts:149
     // public arc4StaticArrayOf2Bytes(data: arc4.StaticArray<arc4.Byte, 2>): arc4.StaticArray<arc4.Byte, 2> {
     txna ApplicationArgs 1
     dup
@@ -669,13 +833,13 @@ arc4StaticArrayOf2Bytes:
     intc_1 // 2
     ==
     assert // invalid number of bytes for arc4.static_array<arc4.uint8, 2>
-    // smart_contracts/avm_types/contract.algo.ts:115
+    // smart_contracts/avm_types/contract.algo.ts:150
     // emit('arc4StaticArrayOf2Bytes', data)
     pushbytes 0xa9da055b // method "arc4StaticArrayOf2Bytes(byte[2])"
     dig 1
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:114
+    // smart_contracts/avm_types/contract.algo.ts:149
     // public arc4StaticArrayOf2Bytes(data: arc4.StaticArray<arc4.Byte, 2>): arc4.StaticArray<arc4.Byte, 2> {
     bytec_0 // 0x151f7c75
     swap
@@ -687,7 +851,7 @@ arc4StaticArrayOf2Bytes:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.arc4StaticArrayOf2Structs[routing]() -> void:
 arc4StaticArrayOf2Structs:
-    // smart_contracts/avm_types/contract.algo.ts:118-120
+    // smart_contracts/avm_types/contract.algo.ts:153-155
     // public arc4StaticArrayOf2Structs(
     //   data: arc4.StaticArray<structAddressUint256, 2>,
     // ): arc4.StaticArray<structAddressUint256, 2> {
@@ -697,13 +861,13 @@ arc4StaticArrayOf2Structs:
     pushint 128 // 128
     ==
     assert // invalid number of bytes for arc4.static_array<structAddressUint256, 2>
-    // smart_contracts/avm_types/contract.algo.ts:121
+    // smart_contracts/avm_types/contract.algo.ts:156
     // emit('arc4StaticArrayOf2Structs', data)
     pushbytes 0x2bbbc427 // method "arc4StaticArrayOf2Structs((address,uint256)[2])"
     dig 1
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:118-120
+    // smart_contracts/avm_types/contract.algo.ts:153-155
     // public arc4StaticArrayOf2Structs(
     //   data: arc4.StaticArray<structAddressUint256, 2>,
     // ): arc4.StaticArray<structAddressUint256, 2> {
@@ -717,7 +881,7 @@ arc4StaticArrayOf2Structs:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.arc4UFixed8x16[routing]() -> void:
 arc4UFixed8x16:
-    // smart_contracts/avm_types/contract.algo.ts:124
+    // smart_contracts/avm_types/contract.algo.ts:159
     // public arc4UFixed8x16(data: arc4.UFixed<8, 16>): arc4.UFixed<8, 16> {
     txna ApplicationArgs 1
     dup
@@ -725,13 +889,13 @@ arc4UFixed8x16:
     intc_0 // 1
     ==
     assert // invalid number of bytes for arc4.ufixed8x16
-    // smart_contracts/avm_types/contract.algo.ts:125
+    // smart_contracts/avm_types/contract.algo.ts:160
     // emit('arc4UFixed8x16', data)
     pushbytes 0x8a344c8c // method "arc4UFixed8x16(ufixed8x16)"
     dig 1
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:124
+    // smart_contracts/avm_types/contract.algo.ts:159
     // public arc4UFixed8x16(data: arc4.UFixed<8, 16>): arc4.UFixed<8, 16> {
     bytec_0 // 0x151f7c75
     swap
@@ -743,21 +907,21 @@ arc4UFixed8x16:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.arc4UFixed512x160[routing]() -> void:
 arc4UFixed512x160:
-    // smart_contracts/avm_types/contract.algo.ts:128
+    // smart_contracts/avm_types/contract.algo.ts:163
     // public arc4UFixed512x160(data: arc4.UFixed<512, 160>): arc4.UFixed<512, 160> {
     txna ApplicationArgs 1
     dup
     len
-    intc_3 // 64
+    pushint 64 // 64
     ==
     assert // invalid number of bytes for arc4.ufixed512x160
-    // smart_contracts/avm_types/contract.algo.ts:129
+    // smart_contracts/avm_types/contract.algo.ts:164
     // emit('arc4UFixed512x160', data)
     pushbytes 0x29c6c3ce // method "arc4UFixed512x160(ufixed512x160)"
     dig 1
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:128
+    // smart_contracts/avm_types/contract.algo.ts:163
     // public arc4UFixed512x160(data: arc4.UFixed<512, 160>): arc4.UFixed<512, 160> {
     bytec_0 // 0x151f7c75
     swap
@@ -769,7 +933,7 @@ arc4UFixed512x160:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.arc4UintN8[routing]() -> void:
 arc4UintN8:
-    // smart_contracts/avm_types/contract.algo.ts:132
+    // smart_contracts/avm_types/contract.algo.ts:167
     // public arc4UintN8(data: arc4.Uint<8>): arc4.Uint<8> {
     txna ApplicationArgs 1
     dup
@@ -777,13 +941,13 @@ arc4UintN8:
     intc_0 // 1
     ==
     assert // invalid number of bytes for arc4.uint8
-    // smart_contracts/avm_types/contract.algo.ts:133
+    // smart_contracts/avm_types/contract.algo.ts:168
     // emit('arc4UintN8', data)
     pushbytes 0xc91b0f5f // method "arc4UintN8(uint8)"
     dig 1
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:132
+    // smart_contracts/avm_types/contract.algo.ts:167
     // public arc4UintN8(data: arc4.Uint<8>): arc4.Uint<8> {
     bytec_0 // 0x151f7c75
     swap
@@ -795,21 +959,21 @@ arc4UintN8:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.arc4UintN512[routing]() -> void:
 arc4UintN512:
-    // smart_contracts/avm_types/contract.algo.ts:136
+    // smart_contracts/avm_types/contract.algo.ts:171
     // public arc4UintN512(data: arc4.Uint<512>): arc4.Uint<512> {
     txna ApplicationArgs 1
     dup
     len
-    intc_3 // 64
+    pushint 64 // 64
     ==
     assert // invalid number of bytes for arc4.uint512
-    // smart_contracts/avm_types/contract.algo.ts:137
+    // smart_contracts/avm_types/contract.algo.ts:172
     // emit('arc4UintN512', data)
     pushbytes 0xbd8025cd // method "arc4UintN512(uint512)"
     dig 1
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:136
+    // smart_contracts/avm_types/contract.algo.ts:171
     // public arc4UintN512(data: arc4.Uint<512>): arc4.Uint<512> {
     bytec_0 // 0x151f7c75
     swap
@@ -821,7 +985,7 @@ arc4UintN512:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.arc4UintN128Alias[routing]() -> void:
 arc4UintN128Alias:
-    // smart_contracts/avm_types/contract.algo.ts:140
+    // smart_contracts/avm_types/contract.algo.ts:175
     // public arc4UintN128Alias(data: arc4.Uint128): arc4.Uint128 {
     txna ApplicationArgs 1
     dup
@@ -829,13 +993,13 @@ arc4UintN128Alias:
     pushint 16 // 16
     ==
     assert // invalid number of bytes for arc4.uint128
-    // smart_contracts/avm_types/contract.algo.ts:141
+    // smart_contracts/avm_types/contract.algo.ts:176
     // emit('arc4UintN128Alias', data)
     pushbytes 0x72e960e0 // method "arc4UintN128Alias(uint128)"
     dig 1
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:140
+    // smart_contracts/avm_types/contract.algo.ts:175
     // public arc4UintN128Alias(data: arc4.Uint128): arc4.Uint128 {
     bytec_0 // 0x151f7c75
     swap
@@ -847,7 +1011,7 @@ arc4UintN128Alias:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.arc4UintN16Alias[routing]() -> void:
 arc4UintN16Alias:
-    // smart_contracts/avm_types/contract.algo.ts:144
+    // smart_contracts/avm_types/contract.algo.ts:179
     // public arc4UintN16Alias(data: arc4.Uint16): arc4.Uint16 {
     txna ApplicationArgs 1
     dup
@@ -855,13 +1019,13 @@ arc4UintN16Alias:
     intc_1 // 2
     ==
     assert // invalid number of bytes for arc4.uint16
-    // smart_contracts/avm_types/contract.algo.ts:145
+    // smart_contracts/avm_types/contract.algo.ts:180
     // emit('arc4UintN16Alias', data)
     pushbytes 0x566472a0 // method "arc4UintN16Alias(uint16)"
     dig 1
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:144
+    // smart_contracts/avm_types/contract.algo.ts:179
     // public arc4UintN16Alias(data: arc4.Uint16): arc4.Uint16 {
     bytec_0 // 0x151f7c75
     swap
@@ -873,7 +1037,7 @@ arc4UintN16Alias:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.arc4UintN256Alias[routing]() -> void:
 arc4UintN256Alias:
-    // smart_contracts/avm_types/contract.algo.ts:148
+    // smart_contracts/avm_types/contract.algo.ts:183
     // public arc4UintN256Alias(data: arc4.Uint256): arc4.Uint256 {
     txna ApplicationArgs 1
     dup
@@ -881,13 +1045,13 @@ arc4UintN256Alias:
     pushint 32 // 32
     ==
     assert // invalid number of bytes for arc4.uint256
-    // smart_contracts/avm_types/contract.algo.ts:149
+    // smart_contracts/avm_types/contract.algo.ts:184
     // emit('arc4UintN256Alias', data)
     pushbytes 0x0f1f017d // method "arc4UintN256Alias(uint256)"
     dig 1
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:148
+    // smart_contracts/avm_types/contract.algo.ts:183
     // public arc4UintN256Alias(data: arc4.Uint256): arc4.Uint256 {
     bytec_0 // 0x151f7c75
     swap
@@ -899,21 +1063,21 @@ arc4UintN256Alias:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.arc4UintN64Alias[routing]() -> void:
 arc4UintN64Alias:
-    // smart_contracts/avm_types/contract.algo.ts:152
+    // smart_contracts/avm_types/contract.algo.ts:187
     // public arc4UintN64Alias(data: arc4.Uint64): arc4.Uint64 {
     txna ApplicationArgs 1
     dup
     len
-    pushint 8 // 8
+    intc_3 // 8
     ==
     assert // invalid number of bytes for arc4.uint64
-    // smart_contracts/avm_types/contract.algo.ts:153
+    // smart_contracts/avm_types/contract.algo.ts:188
     // emit('arc4UintN64Alias', data)
     pushbytes 0xd0738ef9 // method "arc4UintN64Alias(uint64)"
     dig 1
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:152
+    // smart_contracts/avm_types/contract.algo.ts:187
     // public arc4UintN64Alias(data: arc4.Uint64): arc4.Uint64 {
     bytec_0 // 0x151f7c75
     swap
@@ -925,7 +1089,7 @@ arc4UintN64Alias:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.arc4UintN8Alias[routing]() -> void:
 arc4UintN8Alias:
-    // smart_contracts/avm_types/contract.algo.ts:156
+    // smart_contracts/avm_types/contract.algo.ts:191
     // public arc4UintN8Alias(data: arc4.Uint8): arc4.Uint8 {
     txna ApplicationArgs 1
     dup
@@ -933,13 +1097,13 @@ arc4UintN8Alias:
     intc_0 // 1
     ==
     assert // invalid number of bytes for arc4.uint8
-    // smart_contracts/avm_types/contract.algo.ts:157
+    // smart_contracts/avm_types/contract.algo.ts:192
     // emit('arc4UintN8Alias', data)
     pushbytes 0x2f92f18a // method "arc4UintN8Alias(uint8)"
     dig 1
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:156
+    // smart_contracts/avm_types/contract.algo.ts:191
     // public arc4UintN8Alias(data: arc4.Uint8): arc4.Uint8 {
     bytec_0 // 0x151f7c75
     swap
@@ -951,7 +1115,7 @@ arc4UintN8Alias:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.arc4UintN82Tuple[routing]() -> void:
 arc4UintN82Tuple:
-    // smart_contracts/avm_types/contract.algo.ts:160
+    // smart_contracts/avm_types/contract.algo.ts:195
     // public arc4UintN82Tuple(data: [arc4.Uint8, arc4.Uint8]): [arc4.Uint8, arc4.Uint8] {
     txna ApplicationArgs 1
     dup
@@ -959,7 +1123,7 @@ arc4UintN82Tuple:
     intc_1 // 2
     ==
     assert // invalid number of bytes for arc4.tuple<arc4.uint8,arc4.uint8>
-    // smart_contracts/avm_types/contract.algo.ts:161
+    // smart_contracts/avm_types/contract.algo.ts:196
     // emit('arc4UintN82Tuple', ...data)
     dup
     extract 0 1
@@ -970,7 +1134,7 @@ arc4UintN82Tuple:
     swap
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:160
+    // smart_contracts/avm_types/contract.algo.ts:195
     // public arc4UintN82Tuple(data: [arc4.Uint8, arc4.Uint8]): [arc4.Uint8, arc4.Uint8] {
     bytec_0 // 0x151f7c75
     swap
@@ -982,7 +1146,7 @@ arc4UintN82Tuple:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.arc4UintN83Tuple[routing]() -> void:
 arc4UintN83Tuple:
-    // smart_contracts/avm_types/contract.algo.ts:164
+    // smart_contracts/avm_types/contract.algo.ts:199
     // public arc4UintN83Tuple(data: [arc4.Uint8, arc4.Uint8, arc4.Uint8]): [arc4.Uint8, arc4.Uint8, arc4.Uint8] {
     txna ApplicationArgs 1
     dup
@@ -990,7 +1154,7 @@ arc4UintN83Tuple:
     pushint 3 // 3
     ==
     assert // invalid number of bytes for arc4.tuple<arc4.uint8,arc4.uint8,arc4.uint8>
-    // smart_contracts/avm_types/contract.algo.ts:165
+    // smart_contracts/avm_types/contract.algo.ts:200
     // emit('arc4UintN83Tuple', ...data)
     dup
     extract 0 1
@@ -1006,7 +1170,7 @@ arc4UintN83Tuple:
     swap
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:164
+    // smart_contracts/avm_types/contract.algo.ts:199
     // public arc4UintN83Tuple(data: [arc4.Uint8, arc4.Uint8, arc4.Uint8]): [arc4.Uint8, arc4.Uint8, arc4.Uint8] {
     bytec_0 // 0x151f7c75
     swap
@@ -1018,7 +1182,7 @@ arc4UintN83Tuple:
 
 // smart_contracts/avm_types/contract.algo.ts::AvmTypes.arc4ComplexTuple[routing]() -> void:
 arc4ComplexTuple:
-    // smart_contracts/avm_types/contract.algo.ts:168-175
+    // smart_contracts/avm_types/contract.algo.ts:203-210
     // public arc4ComplexTuple(
     //   data: [
     //     arc4.Address,
@@ -1033,7 +1197,7 @@ arc4ComplexTuple:
     pushint 224 // 224
     ==
     assert // invalid number of bytes for arc4.tuple<arc4.static_array<arc4.uint8, 32>,arc4.tuple<arc4.uint256,arc4.uint256>,arc4.tuple<arc4.uint256,arc4.uint256>,arc4.tuple<arc4.uint256,arc4.uint256>>
-    // smart_contracts/avm_types/contract.algo.ts:176
+    // smart_contracts/avm_types/contract.algo.ts:211
     // emit('arc4ComplexTuple', ...data)
     dup
     extract 0 32
@@ -1054,7 +1218,7 @@ arc4ComplexTuple:
     swap
     concat
     log
-    // smart_contracts/avm_types/contract.algo.ts:168-175
+    // smart_contracts/avm_types/contract.algo.ts:203-210
     // public arc4ComplexTuple(
     //   data: [
     //     arc4.Address,
@@ -1063,6 +1227,252 @@ arc4ComplexTuple:
     //     [arc4.Uint256, arc4.Uint256],
     //   ],
     // ): [arc4.Address, [arc4.Uint256, arc4.Uint256], [arc4.Uint256, arc4.Uint256], [arc4.Uint256, arc4.Uint256]] {
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+
+// smart_contracts/avm_types/contract.algo.ts::AvmTypes.uint64[routing]() -> void:
+uint64:
+    // smart_contracts/avm_types/contract.algo.ts:214
+    // public uint64(data: uint64): uint64 {
+    txna ApplicationArgs 1
+    dup
+    len
+    intc_3 // 8
+    ==
+    assert // invalid number of bytes for arc4.uint64
+    // smart_contracts/avm_types/contract.algo.ts:215
+    // emit('uint64', data)
+    pushbytes 0x12427732 // method "uint64(uint64)"
+    dig 1
+    concat
+    log
+    // smart_contracts/avm_types/contract.algo.ts:214
+    // public uint64(data: uint64): uint64 {
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+
+// smart_contracts/avm_types/contract.algo.ts::AvmTypes.uint64Array[routing]() -> void:
+uint64Array:
+    // smart_contracts/avm_types/contract.algo.ts:218
+    // public uint64Array(data: uint64[]): uint64[] {
+    txna ApplicationArgs 1
+    dup
+    intc_2 // 0
+    extract_uint16 // on error: invalid array length header
+    intc_3 // 8
+    *
+    intc_1 // 2
+    +
+    dig 1
+    len
+    ==
+    assert // invalid number of bytes for arc4.dynamic_array<uint64>
+    // smart_contracts/avm_types/contract.algo.ts:219
+    // emit('uint64Array', data)
+    pushbytes 0x6f3477d10002
+    dig 1
+    concat
+    log
+    // smart_contracts/avm_types/contract.algo.ts:218
+    // public uint64Array(data: uint64[]): uint64[] {
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+
+// smart_contracts/avm_types/contract.algo.ts::AvmTypes.booleanArray[routing]() -> void:
+booleanArray:
+    // smart_contracts/avm_types/contract.algo.ts:222
+    // public booleanArray(data: boolean[]): boolean[] {
+    txna ApplicationArgs 1
+    dup
+    intc_2 // 0
+    extract_uint16 // on error: invalid array length header
+    pushint 7 // 7
+    +
+    intc_3 // 8
+    /
+    intc_1 // 2
+    +
+    dig 1
+    len
+    ==
+    assert // invalid number of bytes for arc4.dynamic_array<bool>
+    // smart_contracts/avm_types/contract.algo.ts:223
+    // emit('booleanArray', data)
+    pushbytes 0x954b32320002
+    dig 1
+    concat
+    log
+    // smart_contracts/avm_types/contract.algo.ts:222
+    // public booleanArray(data: boolean[]): boolean[] {
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+
+// smart_contracts/avm_types/contract.algo.ts::AvmTypes.arc4Str[routing]() -> void:
+arc4Str:
+    // smart_contracts/avm_types/contract.algo.ts:226
+    // public arc4Str(data: arc4.Str): arc4.Str {
+    txna ApplicationArgs 1
+    dup
+    intc_2 // 0
+    extract_uint16 // on error: invalid array length header
+    intc_1 // 2
+    +
+    dig 1
+    len
+    ==
+    assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>
+    // smart_contracts/avm_types/contract.algo.ts:227
+    // emit('arc4Str', data)
+    pushbytes 0xd1affea60002
+    dig 1
+    concat
+    log
+    // smart_contracts/avm_types/contract.algo.ts:226
+    // public arc4Str(data: arc4.Str): arc4.Str {
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+
+// smart_contracts/avm_types/contract.algo.ts::AvmTypes.arc4Tuple[routing]() -> void:
+arc4Tuple:
+    // smart_contracts/avm_types/contract.algo.ts:230
+    // public arc4Tuple(data: arc4.Tuple<[arc4.Uint64, arc4.Str]>): arc4.Tuple<[arc4.Uint64, arc4.Str]> {
+    txna ApplicationArgs 1
+    dup
+    len
+    dig 1
+    intc_3 // 8
+    extract_uint16 // on error: invalid tuple encoding
+    dup
+    pushint 10 // 10
+    ==
+    assert // invalid tail pointer at index 1 of (uint64,(len+utf8[]))
+    dig 2
+    swap
+    dig 2
+    substring3
+    intc_2 // 0
+    extract_uint16 // on error: invalid array length header
+    pushint 12 // 12
+    +
+    ==
+    assert // invalid number of bytes for arc4.tuple<arc4.uint64,arc4.dynamic_array<arc4.uint8>>
+    // smart_contracts/avm_types/contract.algo.ts:231
+    // emit('arc4Tuple', data)
+    pushbytes 0x6cbce3e50002
+    dig 1
+    concat
+    log
+    // smart_contracts/avm_types/contract.algo.ts:230
+    // public arc4Tuple(data: arc4.Tuple<[arc4.Uint64, arc4.Str]>): arc4.Tuple<[arc4.Uint64, arc4.Str]> {
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+
+// smart_contracts/avm_types/contract.algo.ts::AvmTypes.nativeTuple[routing]() -> void:
+nativeTuple:
+    // smart_contracts/avm_types/contract.algo.ts:234
+    // public nativeTuple(data: [uint64, string, boolean]): [uint64, string, boolean] {
+    txna ApplicationArgs 1
+    dup
+    len
+    dig 1
+    intc_3 // 8
+    extract_uint16 // on error: invalid tuple encoding
+    dup
+    pushint 11 // 11
+    ==
+    assert // invalid tail pointer at index 1 of (uint64,(len+utf8[]),bool1)
+    dig 2
+    swap
+    dig 2
+    substring3
+    dup
+    intc_2 // 0
+    extract_uint16 // on error: invalid array length header
+    pushint 13 // 13
+    +
+    uncover 2
+    ==
+    assert // invalid number of bytes for arc4.tuple<uint64,string,bool>
+    // smart_contracts/avm_types/contract.algo.ts:235
+    // emit('nativeTuple', ...data)
+    dig 1
+    extract 0 8
+    dig 2
+    pushint 80 // 80
+    getbit
+    pushbytes 0x00
+    intc_2 // 0
+    uncover 2
+    setbit
+    swap
+    pushbytes 0x000b
+    concat
+    swap
+    concat
+    swap
+    concat
+    pushbytes 0xa02bbf18 // method "nativeTuple(uint64,string,bool)"
+    swap
+    concat
+    log
+    // smart_contracts/avm_types/contract.algo.ts:234
+    // public nativeTuple(data: [uint64, string, boolean]): [uint64, string, boolean] {
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+
+// smart_contracts/avm_types/contract.algo.ts::AvmTypes.fixedArrayUint64[routing]() -> void:
+fixedArrayUint64:
+    // smart_contracts/avm_types/contract.algo.ts:238
+    // public fixedArrayUint64(data: FixedArray<uint64, 3>): FixedArray<uint64, 3> {
+    txna ApplicationArgs 1
+    dup
+    len
+    pushint 24 // 24
+    ==
+    assert // invalid number of bytes for arc4.static_array<uint64, 3>
+    // smart_contracts/avm_types/contract.algo.ts:239
+    // emit('fixedArrayUint64', data)
+    pushbytes 0x1bf240d8 // method "fixedArrayUint64(uint64[3])"
+    dig 1
+    concat
+    log
+    // smart_contracts/avm_types/contract.algo.ts:238
+    // public fixedArrayUint64(data: FixedArray<uint64, 3>): FixedArray<uint64, 3> {
     bytec_0 // 0x151f7c75
     swap
     concat

@@ -1,4 +1,17 @@
-import { abimethod, arc4, biguint, bytes, Contract, emit, gtxn } from '@algorandfoundation/algorand-typescript'
+import {
+  abimethod,
+  Account,
+  Application,
+  arc4,
+  Asset,
+  biguint,
+  bytes,
+  Contract,
+  emit,
+  FixedArray,
+  gtxn,
+  uint64,
+} from '@algorandfoundation/algorand-typescript'
 
 // Define a struct for the event with named parameters
 class structAddressUint256 extends arc4.Struct<{
@@ -65,13 +78,35 @@ export class AvmTypes extends Contract {
     emit('Transaction', data.txnId)
     return data.txnId
   }
-  // How to properly refence the asset ID?
-  // public Asset(data: Asset): Asset {
-  //   return data
-  // }
-  // public Application(data: Application): Application {
-  //   return data
-  // }
+  public account(data: Account): Account {
+    emit('account', data.bytes)
+    return data
+  }
+  public asset(data: Asset): Asset {
+    emit('asset', data.id)
+    return data
+  }
+  public application(data: Application): Application {
+    emit('application', data.id)
+    return data
+  }
+  // Reference types encoded as a uint8 index into the transaction's accounts/assets/apps foreign array,
+  // rather than passed by value (address / uint64 id) as the 'account'/'asset'/'application' methods above do.
+  @abimethod({ resourceEncoding: 'index' })
+  public accountIndexed(data: Account): Account {
+    emit('accountIndexed', data.bytes)
+    return data
+  }
+  @abimethod({ resourceEncoding: 'index' })
+  public assetIndexed(data: Asset): Asset {
+    emit('assetIndexed', data.id)
+    return data
+  }
+  @abimethod({ resourceEncoding: 'index' })
+  public applicationIndexed(data: Application): Application {
+    emit('applicationIndexed', data.id)
+    return data
+  }
   // Array of struct is not compiling
   // public structArray(data: structAddressUint256[]): structAddressUint256[] {
   //   return data
@@ -174,6 +209,34 @@ export class AvmTypes extends Contract {
     ],
   ): [arc4.Address, [arc4.Uint256, arc4.Uint256], [arc4.Uint256, arc4.Uint256], [arc4.Uint256, arc4.Uint256]] {
     emit('arc4ComplexTuple', ...data)
+    return data
+  }
+  public uint64(data: uint64): uint64 {
+    emit('uint64', data)
+    return data
+  }
+  public uint64Array(data: uint64[]): uint64[] {
+    emit('uint64Array', data)
+    return data
+  }
+  public booleanArray(data: boolean[]): boolean[] {
+    emit('booleanArray', data)
+    return data
+  }
+  public arc4Str(data: arc4.Str): arc4.Str {
+    emit('arc4Str', data)
+    return data
+  }
+  public arc4Tuple(data: arc4.Tuple<[arc4.Uint64, arc4.Str]>): arc4.Tuple<[arc4.Uint64, arc4.Str]> {
+    emit('arc4Tuple', data)
+    return data
+  }
+  public nativeTuple(data: [uint64, string, boolean]): [uint64, string, boolean] {
+    emit('nativeTuple', ...data)
+    return data
+  }
+  public fixedArrayUint64(data: FixedArray<uint64, 3>): FixedArray<uint64, 3> {
+    emit('fixedArrayUint64', data)
     return data
   }
 }
