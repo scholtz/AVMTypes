@@ -27,7 +27,7 @@ Ensure the following pre-requisites are installed and properly configured:
 #### 3. Bootstrap Your Local Environment
 Run the following commands within the project folder:
 
-- **Setup Project**: Execute `algokit project bootstrap all` to install dependencies and setup npm dependencies.
+- **Setup Project**: Execute `algokit project bootstrap all` to install dependencies and setup pnpm dependencies.
 - **Configure environment**: Execute `algokit generate env-file -a target_network localnet` to create a `.env.localnet` file with default configuration for `localnet`.
 - **Start LocalNet**: Use `algokit localnet start` to initiate a local Algorand network.
 
@@ -117,7 +117,7 @@ To define custom `algokit project run` commands refer to [documentation](https:/
 #### Continuous Integration
 
 For pull requests and pushes to `main` branch against this repository the following checks are automatically performed by GitHub Actions:
- - NPM dependencies are audited using [better-npm-audit](https://github.com/jeemok/better-npm-audit#readme)
+ - Dependencies are audited using [pnpm audit](https://pnpm.io/cli/audit)
  - Code formatting is performed using [Prettier](https://prettier.io/)
  - Linting is checked using [ESLint](https://eslint.org/)
 - The base framework for testing is [vitest](https://vitest.dev/), and the project includes two separate kinds of tests:
@@ -144,11 +144,11 @@ This project makes use of Algorand TypeScript to build Algorand smart contracts.
 - [AlgoKit](https://github.com/algorandfoundation/algokit-cli) - One-stop shop tool for developers building on the Algorand network; [docs](https://github.com/algorandfoundation/algokit-cli/blob/main/docs/algokit.md), [intro tutorial](https://github.com/algorandfoundation/algokit-cli/blob/main/docs/tutorials/intro.md)
 - [Algorand TypeScript](https://github.com/algorandfoundation/puya-ts/) - A semantically and syntactically compatible, typed TypeScript language that works with standard TypeScript tooling and allows you to express smart contracts (apps) and smart signatures (logic signatures) for deployment on the Algorand Virtual Machine (AVM); [docs](https://github.com/algorandfoundation/puya-ts/), [examples](https://github.com/algorandfoundation/puya-ts/tree/main/examples)
 - [AlgoKit Utils](https://github.com/algorandfoundation/algokit-utils-ts) - A set of core Algorand utilities that make it easier to build solutions on Algorand.
-- [NPM](https://www.npmjs.com/): TypeScript packaging and dependency management.
+- [pnpm](https://pnpm.io/): TypeScript packaging and dependency management.
 - [TypeScript](https://www.typescriptlang.org/): Strongly typed programming language that builds on JavaScript
 - [ts-node-dev](https://github.com/wclr/ts-node-dev): TypeScript development execution environment- [Prettier](https://prettier.io/): A code formatter.- [ESLint](https://eslint.org/): A JavaScript / TypeScript linter.
 - [vitest](https://vitest.dev/): Automated testing.
-- [better-npm-audit](https://github.com/jeemok/better-npm-audit#readme): Tool for scanning JavaScript / TypeScript environments for packages with known vulnerabilities.
+- [pnpm audit](https://pnpm.io/cli/audit): Tool for scanning JavaScript / TypeScript environments for packages with known vulnerabilities.
 - [pre-commit](https://pre-commit.com/): A framework for managing and maintaining multi-language pre-commit hooks, to enable pre-commit you need to run `pre-commit install` in the root of the repository. This will install the pre-commit hooks and run them against modified files when committing. If any of the hooks fail, the commit will be aborted. To run the hooks on all files, use `pre-commit run --all-files`.
 
 

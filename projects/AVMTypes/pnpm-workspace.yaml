@@ -1,0 +1,6 @@
+overrides:
+  esbuild: 0.25.0
+
+allowBuilds:
+  '@algorandfoundation/puya-ts': true
+  esbuild: true
