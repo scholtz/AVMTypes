@@ -3,12 +3,12 @@ import { abimethod, arc4, biguint, bytes, Contract, emit, gtxn } from '@algorand
 // Define a struct for the event with named parameters
 class structAddressUint256 extends arc4.Struct<{
   address: arc4.Address
-  uint256: arc4.UintN256
+  uint256: arc4.Uint256
 }> {}
 
 // Define a struct for the event with named parameters
 class innerStruct extends arc4.Struct<{
-  num: arc4.UintN64
+  num: arc4.Uint64
   struct: structAddressUint256
 }> {}
 export class AvmTypes extends Contract {
@@ -121,58 +121,58 @@ export class AvmTypes extends Contract {
     emit('arc4StaticArrayOf2Structs', data)
     return data
   }
-  public arc4UFixed8x16(data: arc4.UFixedNxM<8, 16>): arc4.UFixedNxM<8, 16> {
+  public arc4UFixed8x16(data: arc4.UFixed<8, 16>): arc4.UFixed<8, 16> {
     emit('arc4UFixed8x16', data)
     return data
   }
-  public arc4UFixed512x160(data: arc4.UFixedNxM<512, 160>): arc4.UFixedNxM<512, 160> {
+  public arc4UFixed512x160(data: arc4.UFixed<512, 160>): arc4.UFixed<512, 160> {
     emit('arc4UFixed512x160', data)
     return data
   }
-  public arc4UintN8(data: arc4.UintN<8>): arc4.UintN<8> {
+  public arc4UintN8(data: arc4.Uint<8>): arc4.Uint<8> {
     emit('arc4UintN8', data)
     return data
   }
-  public arc4UintN512(data: arc4.UintN<512>): arc4.UintN<512> {
+  public arc4UintN512(data: arc4.Uint<512>): arc4.Uint<512> {
     emit('arc4UintN512', data)
     return data
   }
-  public arc4UintN128Alias(data: arc4.UintN128): arc4.UintN128 {
+  public arc4UintN128Alias(data: arc4.Uint128): arc4.Uint128 {
     emit('arc4UintN128Alias', data)
     return data
   }
-  public arc4UintN16Alias(data: arc4.UintN16): arc4.UintN16 {
+  public arc4UintN16Alias(data: arc4.Uint16): arc4.Uint16 {
     emit('arc4UintN16Alias', data)
     return data
   }
-  public arc4UintN256Alias(data: arc4.UintN256): arc4.UintN256 {
+  public arc4UintN256Alias(data: arc4.Uint256): arc4.Uint256 {
     emit('arc4UintN256Alias', data)
     return data
   }
-  public arc4UintN64Alias(data: arc4.UintN64): arc4.UintN64 {
+  public arc4UintN64Alias(data: arc4.Uint64): arc4.Uint64 {
     emit('arc4UintN64Alias', data)
     return data
   }
-  public arc4UintN8Alias(data: arc4.UintN8): arc4.UintN8 {
+  public arc4UintN8Alias(data: arc4.Uint8): arc4.Uint8 {
     emit('arc4UintN8Alias', data)
     return data
   }
-  public arc4UintN82Tuple(data: [arc4.UintN8, arc4.UintN8]): [arc4.UintN8, arc4.UintN8] {
+  public arc4UintN82Tuple(data: [arc4.Uint8, arc4.Uint8]): [arc4.Uint8, arc4.Uint8] {
     emit('arc4UintN82Tuple', ...data)
     return data
   }
-  public arc4UintN83Tuple(data: [arc4.UintN8, arc4.UintN8, arc4.UintN8]): [arc4.UintN8, arc4.UintN8, arc4.UintN8] {
+  public arc4UintN83Tuple(data: [arc4.Uint8, arc4.Uint8, arc4.Uint8]): [arc4.Uint8, arc4.Uint8, arc4.Uint8] {
     emit('arc4UintN83Tuple', ...data)
     return data
   }
   public arc4ComplexTuple(
     data: [
       arc4.Address,
-      [arc4.UintN256, arc4.UintN256],
-      [arc4.UintN256, arc4.UintN256],
-      [arc4.UintN256, arc4.UintN256],
+      [arc4.Uint256, arc4.Uint256],
+      [arc4.Uint256, arc4.Uint256],
+      [arc4.Uint256, arc4.Uint256],
     ],
-  ): [arc4.Address, [arc4.UintN256, arc4.UintN256], [arc4.UintN256, arc4.UintN256], [arc4.UintN256, arc4.UintN256]] {
+  ): [arc4.Address, [arc4.Uint256, arc4.Uint256], [arc4.Uint256, arc4.Uint256], [arc4.Uint256, arc4.Uint256]] {
     emit('arc4ComplexTuple', ...data)
     return data
   }

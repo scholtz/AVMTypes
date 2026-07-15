@@ -3,8 +3,8 @@ import typescript from '@rollup/plugin-typescript'
 import { defineConfig } from 'vitest/config'
 
 export default defineConfig({
-  esbuild: {},
-  test: {    
+  oxc: false,
+  test: {
     testTimeout: 10000,
     coverage: {
       provider: 'v8',
@@ -14,7 +14,7 @@ export default defineConfig({
     typescript({
       tsconfig: './tsconfig.test.json',
       transformers: {
-        before: [puyaTsTransformer],
+        before: [puyaTsTransformer({ includeExt: ['.algo.ts', '.algo.spec.ts', '.algo.test.ts', '.spec.ts'] })],
       },
     }),
   ],

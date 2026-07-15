@@ -21,27 +21,28 @@
     "pnpm": ">=9.0"
   },
   "dependencies": {
-    "@algorandfoundation/algorand-typescript": "~1.0.0-beta.25 <1.0.0"
+    "@algorandfoundation/algorand-typescript": "^1.1.0"
   },
   "devDependencies": {
-    "@algorandfoundation/algokit-client-generator": "^6.0.0",
-    "@algorandfoundation/algokit-utils": "^9.1.2",
+    "@algorandfoundation/algokit-client-generator": "^6.0.1",
+    "@algorandfoundation/algokit-utils": "^9.2.0",
     "@algorandfoundation/algokit-utils-debug": "^1.0.4",
-    "@algorandfoundation/algorand-typescript-testing": "~1.0.0-beta.35 <1.0.0",
-    "@algorandfoundation/puya-ts": "~1.0.0-beta.72 <1.0.0",
-    "@eslint/js": "^9.18.0",
-    "@rollup/plugin-typescript": "^12.1.4",
-    "@tsconfig/node22": "^22.0.2",
-    "@vitest/coverage-v8": "^2.1.9",
-    "algosdk": "^3.4.0",
-    "dotenv": "^16.6.1",
-    "eslint": "^9.34.0",
-    "globals": "^14.0.0",
-    "prettier": "^3.6.2",
+    "@algorandfoundation/algorand-typescript-testing": "^1.1.0",
+    "@algorandfoundation/puya-ts": "^1.1.0",
+    "@eslint/js": "^10.0.1",
+    "@rollup/plugin-typescript": "^12.3.0",
+    "@tsconfig/node24": "^24.0.4",
+    "@types/node": "^26.1.1",
+    "@vitest/coverage-v8": "^4.1.10",
+    "algosdk": "^3.6.0",
+    "dotenv": "^17.4.2",
+    "eslint": "^10.7.0",
+    "globals": "^17.7.0",
+    "prettier": "^3.9.5",
     "ts-node-dev": "^2.0.0",
     "tslib": "^2.8.1",
-    "typescript": "^5.9.2",
-    "typescript-eslint": "^8.41.0",
-    "vitest": "^2.1.8"
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.64.0",
+    "vitest": "^4.1.10"
   }
 }
